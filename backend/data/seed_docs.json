@@ -1,0 +1,82 @@
+[
+  {
+    "title": "D.Va Hero Overview",
+    "hero": "D.Va",
+    "category": "ability",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/D.Va",
+    "text": "D.Va is a Tank hero who uses Fusion Cannons, Defense Matrix, Boosters, Micro Missiles, and Self-Destruct. Defense Matrix can absorb many incoming projectiles and helps protect teammates during engagements."
+  },
+  {
+    "title": "Orisa Hero Overview",
+    "hero": "Orisa",
+    "category": "ability",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/Orisa",
+    "text": "Orisa is a Tank hero built around sustained frontline pressure. Fortify makes Orisa harder to displace, Javelin Spin mitigates incoming fire, and Energy Javelin can stun and push enemies."
+  },
+  {
+    "title": "Mauga Hero Overview",
+    "hero": "Mauga",
+    "category": "ability",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/Mauga",
+    "text": "Mauga is a Tank hero with dual chainguns, Cardiac Overdrive sustain, Overrun mobility, and Cage Fight. He is strongest when enemies allow him to maintain line of sight and self-heal through damage."
+  },
+  {
+    "title": "Ana Hero Overview",
+    "hero": "Ana",
+    "category": "ability",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/Ana",
+    "text": "Ana is a Support hero with Biotic Rifle, Sleep Dart, Biotic Grenade, and Nano Boost. Biotic Grenade prevents enemy healing and amplifies allied healing, making it a defining anti-sustain tool."
+  },
+  {
+    "title": "Genji Shuriken Alt Fire",
+    "hero": "Genji",
+    "category": "ability",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/Genji#Shuriken_Alt_Fire",
+    "text": "Genji is a Damage hero. Shuriken Alt Fire, also called Fan of Blades, is Genji's secondary fire. It throws a fan of 3 projectiles in an arc. Damage is 27 per shuriken and 81 per shot if all 3 shuriken hit. It can headshot for x2 damage. Rate of fire is 1.47 shots per second, ammo consumption is 3, ammo is 30, reload time is 1.5 seconds, projectile speed is 75 meters per second, projectile radius is 0.125 meters, and spread is 4.5 degrees."
+  },
+  {
+    "title": "Genji Shuriken Primary Fire",
+    "hero": "Genji",
+    "category": "ability",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/Genji#Shuriken",
+    "text": "Genji's Shuriken primary fire throws an accurate burst of 3 projectiles. Damage is 27 per shuriken and 81 per shot if all 3 shuriken hit. It can headshot for x2 damage. Rate of fire is 1.14 shots per second, ammo consumption is 3, ammo is 30, reload time is 1.5 seconds, projectile speed is 75 meters per second, projectile radius is 0.125 meters, and spread is none."
+  },
+  {
+    "title": "Dorado Map Notes",
+    "hero": null,
+    "category": "stats",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/Dorado",
+    "text": "Dorado is an Escort map with high ground around first and second points. Strong vertical control, ranged pressure, dive access, and rotations onto rooftops are important."
+  },
+  {
+    "title": "King's Row Map Notes",
+    "hero": null,
+    "category": "stats",
+    "date": null,
+    "url": "https://overwatch.fandom.com/wiki/King%27s_Row",
+    "text": "King's Row is a Hybrid map with tight chokes, brawl-favored streets, and important hotel and statue rotations. Close-range sustain and area control often gain value."
+  },
+  {
+    "title": "Counterplay Notes Against Orisa Mauga Ana",
+    "hero": null,
+    "category": "stats",
+    "date": null,
+    "url": "local://counterplay",
+    "text": "Against Orisa, Mauga, and Ana, teams should deny sustained line of sight, pressure Ana, use anti-heal timing carefully, control high ground, and avoid feeding tank sustain. Sigma, D.Va, Tracer, Sombra, Sojourn, Kiriko, Lucio, and Zenyatta can all fit depending on map geometry."
+  },
+  {
+    "title": "Season 9 Global Patch Notes",
+    "hero": null,
+    "category": "patch",
+    "date": "2024-02-13",
+    "url": "https://overwatch.blizzard.com/news/patch-notes/live/2024/02",
+    "text": "The Season 9 patch increased hero health pools, adjusted projectile sizes, and introduced a Damage role passive that reduces healing received by damaged targets."
+  }
+]

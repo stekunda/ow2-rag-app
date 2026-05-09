@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/data/chroma/
+node_modules/
+.next/
+dist/
+coverage/
+.DS_Store
