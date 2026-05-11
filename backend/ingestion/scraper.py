@@ -9,12 +9,13 @@ from typing import Iterable
 
 BASE_URL = "https://overwatch.fandom.com/wiki"
 DEFAULT_HEROES = [
-    "Ana", "Ashe", "Baptiste", "Bastion", "Brigitte", "Cassidy", "D.Va", "Doomfist",
+    "Ana", "Ashe", "Baptiste", "Bastion", "Brigitte", "Cassidy", "D.Va", "Domina", "Doomfist",
     "Echo", "Genji", "Hanzo", "Illari", "Junker Queen", "Junkrat", "Kiriko", "Lifeweaver",
     "Lucio", "Mauga", "Mei", "Mercy", "Moira", "Orisa", "Pharah", "Ramattra", "Reaper",
     "Reinhardt", "Roadhog", "Sigma", "Sojourn", "Soldier: 76", "Sombra", "Symmetra",
     "Torbjorn", "Tracer", "Venture", "Widowmaker", "Winston", "Wrecking Ball", "Zarya",
-    "Zenyatta"
+    "Zenyatta", "Hazard", "Anran", "Vendetta", "Sierra", "Freja", "Emre", "Juno", "Mizuki",
+    "Wuyang", "Jetpack Cat"
 ]
 
 

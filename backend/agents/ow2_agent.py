@@ -230,13 +230,13 @@ async def run_agent(request: ChatRequest) -> ChatResponse:
 
     tool_calls: list[ToolCall] = []
     if "patch" in lowered or "nerf" in lowered or "buff" in lowered:
-        _, call = tools.get_patch_history(heroes[0] if heroes else request.selected_hero or "")
+        _, call = tools.get_patch_history(heroes[0] if heroes else "")
         tool_calls.append(call)
     if any(term in lowered for term in ["damage", "secondary", "primary", "fire", "cooldown", "ammo", "ability", "abilities"]):
-        _, call = tools.search_hero_abilities(heroes[0] if heroes else request.selected_hero or "", request.message)
+        _, call = tools.search_hero_abilities(heroes[0] if heroes else "", request.message)
         tool_calls.append(call)
     if any(term in lowered for term in ["counter", "against", "frontline"]):
-        for hero in heroes[:3] or [request.selected_hero or ""]:
+        for hero in heroes[:3] or [""]:
             _, call = tools.find_counters(hero, map_name)
             tool_calls.append(call)
     if any(term in lowered for term in ["comp", "team", "build"]):

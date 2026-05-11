@@ -1,10 +1,3 @@
-export type HeroRole = "Tank" | "Damage" | "Support";
-
-export type Hero = {
-  name: string;
-  role: HeroRole;
-};
-
 export type Source = {
   title: string;
   url?: string | null;

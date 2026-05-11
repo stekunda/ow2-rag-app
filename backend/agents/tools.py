@@ -101,12 +101,10 @@ class HeroIntelTools:
         return self._timed("search_hero_lore", {"query": query}, lambda: self.retrieve(f"lore story biography {query}", 5))
 
     def search_hero_abilities(self, hero: str, query: str) -> tuple[str, ToolCall]:
-        where = {"hero": hero} if hero else None
-        return self._timed("search_hero_abilities", {"hero": hero, "query": query}, lambda: self.retrieve(f"ability stats damage cooldown ammo {hero} {query}", 7, where))
+        return self._timed("search_hero_abilities", {"hero": hero, "query": query}, lambda: self.retrieve(f"ability stats damage cooldown ammo {hero} {query}", 7))
 
     def get_patch_history(self, hero: str) -> tuple[str, ToolCall]:
-        where = {"category": "patch"}
-        return self._timed("get_patch_history", {"hero": hero}, lambda: self.retrieve(f"{hero} patch notes balance changes", 5, where))
+        return self._timed("get_patch_history", {"hero": hero}, lambda: self.retrieve(f"{hero} patch notes balance changes", 5))
 
     def find_counters(self, hero: str, map_type: str | None = None) -> tuple[str, ToolCall]:
         query = f"counterplay counters against {hero} {map_type or ''}"
