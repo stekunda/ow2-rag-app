@@ -177,7 +177,7 @@ export default function Home() {
                 <span className="block text-[#f99e1a] [text-shadow:0_0_34px_rgba(249,158,26,0.32)]">Intel Hub</span>
               </h1>
               <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-[#9fb0c8] md:text-base">
-                Ask about hero damage, counters, comps, maps, and patch context from your indexed RAG corpus.
+                Ask about hero damage, counters, comps, maps, and patch notes to level up your ow2 game.
               </p>
             </div>
 
