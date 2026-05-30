@@ -25,20 +25,12 @@ services:
     healthCheckPath: /health
     autoDeploy: true
     envVars:
-      # Database connection
       - key: CHROMA_HOST
         value: chroma
       - key: CHROMA_PORT
         value: "8000"
-      
-      # Frontend connection
       - key: FRONTEND_ORIGIN
-        fromService:
-          type: web
-          name: ow2-rag-frontend
-          property: host
-      
-      # OpenAI API Key (required for GPT-4o-mini)
+        value: https://ow2-rag-frontend.onrender.com
       - key: OPENAI_API_KEY
         sync: false
 
@@ -52,9 +44,5 @@ services:
     plan: standard
     autoDeploy: true
     envVars:
-      # Backend connection
       - key: NEXT_PUBLIC_API_BASE
-        fromService:
-          type: web
-          name: ow2-rag-backend
-          property: host
+        value: https://ow2-rag-backend.onrender.com
