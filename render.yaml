@@ -2,14 +2,10 @@ services:
   # ChromaDB: Vector database for semantic search
   - type: pserv
     name: chroma
-    runtime: docker
+    runtime: image
     image:
       url: chromadb/chroma:0.5.23
-    plan: standard
-    disk:
-      name: chroma-data
-      mountPath: /chroma/chroma
-      sizeGB: 10
+    plan: free
     envVars:
       - key: ANONYMIZED_TELEMETRY
         value: "False"
@@ -20,8 +16,7 @@ services:
     runtime: docker
     dockerfilePath: backend/Dockerfile
     dockerContext: ./
-    buildCommand: ""
-    plan: standard
+    plan: free
     healthCheckPath: /health
     autoDeploy: true
     envVars:
@@ -40,8 +35,7 @@ services:
     runtime: docker
     dockerfilePath: frontend/Dockerfile
     dockerContext: ./
-    buildCommand: ""
-    plan: standard
+    plan: free
     autoDeploy: true
     envVars:
       - key: NEXT_PUBLIC_API_BASE
