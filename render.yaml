@@ -3,7 +3,7 @@ services:
   - type: pserv
     name: chroma
     runtime: docker
-    image: chromadb/chroma:0.5.23
+    image: "chromadb/chroma:0.5.23"
     plan: standard
     disk:
       name: chroma-data
