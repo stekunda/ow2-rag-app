@@ -37,7 +37,6 @@ services:
           type: web
           name: ow2-rag-frontend
           property: host
-          envVarKey: RENDER_EXTERNAL_URL_FRONTEND
       
       # OpenAI API Key (required for GPT-4o-mini)
       - key: OPENAI_API_KEY
@@ -59,4 +58,3 @@ services:
           type: web
           name: ow2-rag-backend
           property: host
-          envVarKey: RENDER_EXTERNAL_URL_BACKEND
