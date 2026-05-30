@@ -1,61 +1,37 @@
 services:
-  # ChromaDB: Vector database for semantic search
   - type: pserv
     name: chroma
     runtime: docker
-    image: "chromadb/chroma:0.5.23"
+    image: chromadb/chroma:0.5.23
     plan: standard
     disk:
       name: chroma-data
       mountPath: /chroma/chroma
       sizeGB: 10
-    envVars:
-      - key: ANONYMIZED_TELEMETRY
-        value: "False"
 
-  # FastAPI Backend: RAG agent + vector search
   - type: web
     name: ow2-rag-backend
     runtime: docker
     dockerfilePath: backend/Dockerfile
     dockerContext: ./
-    buildCommand: ""
     plan: standard
     healthCheckPath: /health
     autoDeploy: true
     envVars:
-      # Database connection
       - key: CHROMA_HOST
         value: chroma
       - key: CHROMA_PORT
         value: "8000"
-      
-      # Frontend connection
-      - key: FRONTEND_ORIGIN
-        fromService:
-          type: web
-          name: ow2-rag-frontend
-          property: host
-          envVarKey: RENDER_EXTERNAL_URL_FRONTEND
-      
-      # OpenAI API Key (required for GPT-4o-mini)
       - key: OPENAI_API_KEY
         sync: false
 
-  # Next.js Frontend: React chat interface
   - type: web
     name: ow2-rag-frontend
     runtime: docker
     dockerfilePath: frontend/Dockerfile
     dockerContext: ./
-    buildCommand: ""
     plan: standard
     autoDeploy: true
     envVars:
-      # Backend connection
       - key: NEXT_PUBLIC_API_BASE
-        fromService:
-          type: web
-          name: ow2-rag-backend
-          property: host
-          envVarKey: RENDER_EXTERNAL_URL_BACKEND
+        value: https://ow2-rag-backend.onrender.com
