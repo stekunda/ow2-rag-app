@@ -3,7 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "OW2 Hero Intelligence",
-  description: "RAG-powered Overwatch 2 hero intelligence chatbot"
+  description: "RAG-powered Overwatch 2 hero intelligence chatbot",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
